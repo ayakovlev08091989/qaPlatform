@@ -19,7 +19,7 @@ const Login = () => {
     return <div className="login-box">
         <input className="login-username" type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
         <input className="login-password" type="text" value={password} onChange={(e) => setPassword(e.target.value) } />
-        <input className="login-submit" type="button" value="Login" onClick={() => {loginUser()}} />
+        <button className="login-submit" type="button" onClick={() => {loginUser()}}>Login</button>
     </div>
 }
 
